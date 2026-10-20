@@ -1,0 +1,124 @@
+{
+  "id": "p75",
+  "title": "Optical Data-Center Interconnect",
+  "category": "Telecommunications",
+  "silhouette": "rack",
+  "slowMotion": false,
+  "falseColor": false,
+  "nodes": [
+    {
+      "id": "n1",
+      "glyph": "transceiver",
+      "label": "Endpoints",
+      "role": "path",
+      "x": 0.12,
+      "y": 0.5
+    },
+    {
+      "id": "n2",
+      "glyph": "plate",
+      "label": "Data",
+      "role": "structure",
+      "x": 0.373,
+      "y": 0.5
+    },
+    {
+      "id": "n3",
+      "glyph": "wavelength",
+      "label": "Wavelengths",
+      "role": "path",
+      "x": 0.627,
+      "y": 0.5
+    },
+    {
+      "id": "n4",
+      "glyph": "card",
+      "label": "Decode",
+      "role": "path",
+      "x": 0.88,
+      "y": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "from": "n1",
+      "to": "n2",
+      "role": "path",
+      "start": 150,
+      "end": 1019
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "role": "path",
+      "start": 300,
+      "end": 1019
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "role": "path",
+      "start": 510,
+      "end": 1019
+    },
+    {
+      "from": "n4",
+      "to": "n1",
+      "role": "path",
+      "start": 750,
+      "end": 1019
+    }
+  ],
+  "emphasis": [
+    [
+      "n1"
+    ],
+    [
+      "n2"
+    ],
+    [
+      "n3"
+    ],
+    [
+      "n4"
+    ],
+    [
+      "n1",
+      "n2",
+      "n3",
+      "n4"
+    ]
+  ],
+  "stages": [
+    {
+      "f0": 0,
+      "f1": 149,
+      "action": "Reveal endpoints",
+      "detail": "Establish the full assembly, then make a measured three-quarter push toward the active region."
+    },
+    {
+      "f0": 150,
+      "f1": 299,
+      "action": "Frame data",
+      "detail": "Use a sectional close-up and identify only the components required for this mechanism."
+    },
+    {
+      "f0": 300,
+      "f1": 509,
+      "action": "Transport wavelengths",
+      "detail": "Track the primary causal pathway, keeping inputs, outputs, and control overlays distinct."
+    },
+    {
+      "f0": 510,
+      "f1": 749,
+      "action": "Receive and decode",
+      "detail": "Follow the resulting response with readable labels and a separate qualitative inset if useful."
+    },
+    {
+      "f0": 750,
+      "f1": 1019,
+      "action": "Show monitoring",
+      "detail": "Pull back to a stable system overview; retain visible losses, limits, or uncertainty where relevant."
+    }
+  ]
+}
