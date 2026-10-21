@@ -4,6 +4,8 @@
 
 Live plate: https://mizcausevic-dev.github.io/optical-data-center-interconnect-explainer/
 
+Repository: https://github.com/mizcausevic-dev/optical-data-center-interconnect-explainer
+
 ## What this is
 
 An interactive anatomy plate for Optical Data-Center Interconnect. Play, scrub, or jump the five stages. The same frame always draws the same picture.
